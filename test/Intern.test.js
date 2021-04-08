@@ -68,7 +68,7 @@ describe('Intern', () => {
   });
 
   describe('getSchool', () => {
-    it("returns 'intern' when the getGithub() method is called", () => {
+    it("returns 'school' when the getSchool() method is called", () => {
       const school = 'columbia';
       const intern = new Intern("", 0, 'test@email.com', school);
 

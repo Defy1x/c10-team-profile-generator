@@ -68,7 +68,7 @@ describe('Engineer', () => {
   });
 
   describe('getGithub', () => {
-    it("returns 'Engineer' when the getGithub() method is called", () => {
+    it("returns 'github' when the getGithub() method is called", () => {
       const github = 'https://www.github.com/';
       const engineer = new Engineer("", 0, 'test@email.com', github);
 
