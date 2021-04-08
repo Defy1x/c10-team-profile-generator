@@ -52,7 +52,7 @@ Coming shortly.
 
 #Usage
 ## Final screenshot
-Will be added shortly.
+![This is the final deployed screenshot of the node project](requirements/passed-tests.png)
 
 #Credits
 Thank you to everyone in the Columbia Engineering Bootcamp.
