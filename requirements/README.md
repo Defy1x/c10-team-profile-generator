@@ -116,7 +116,7 @@ Finally, although it’s not a requirement, consider adding validation to ensure
 
 ## Grading Requirements
 
-This homework is graded based on the following criteria: 
+This homework is graded based on the following criteria:
 
 ### Deliverables: 15%
 
@@ -150,11 +150,11 @@ This homework is graded based on the following criteria:
 
 ### Repository Quality: 13%
 
-* Repository has a unique name.
+* Repository has a unique name. (good)
 
-* Repository follows best practices for file structure and naming conventions.
+* Repository follows best practices for file structure and naming conventions. (good)
 
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc. (good)
 
 * Repository contains multiple descriptive commit messages.
 
