@@ -12,7 +12,7 @@
 ## Description:
 This project is a Node JS application that creates an html for a team and also checks the applications of TDD.
 
-As for our ninth week of homework for this assignment we (Columbia Engineering Bootcamp students) were given the following user story below and acceptance criteria:
+As for our tenth week of homework for this assignment we (Columbia Engineering Bootcamp students) were given the following user story below and acceptance criteria:
 
 ## Requirements
 
