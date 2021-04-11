@@ -13,8 +13,11 @@ const buildTemplate = require('./page-template.js')
 let teamMembers = []
 
 function init(){
+  //start the program
   function addManager(){
+    //adds a manager
     inquirer.prompt(managerQuestions).then((managerData) => {
+      //gets manager questions and then calls them back
       let manager = new Manager (
         managerData.managerName,
         managerData.managerID,
@@ -22,27 +25,60 @@ function init(){
         managerData.managerOfficeNumber,
       );
       teamMembers.push(manager);
+      //pushes manager to array
       console.log(teamMembers)
       goToMenu()
     });
   }
 
     function goToMenu(){
+      //lets user add other team members
       inquirer.prompt(menuQuestions).then((menuData) => {
         if (menuData.addTeamMember === "Add an engineer"){
           engineerPrompt();
-          console.log("picked an engineer")
+          //calls engineer function when picked
         }
        if (menuData.addTeamMember === "Add an intern"){
          internPrompt();
-         console.log("picked an intern")
+         //calls intern prompt when picked
        }
        else {
-         console.log("finished")
          return
        }
     }
   )};
+
+    function engineerPrompt(){
+      //starts function to get engineer info
+      inquirer.prompt(engineerQuestions).then((engineerData) => {
+        let engineer = new Engineer (
+          engineerData.engineerName,
+          engineerData.engineerID,
+          engineerData.engineerEmail,
+          engineerData.engineerGithub,
+        );
+        teamMembers.push(engineer);
+        //pushes engineer to array
+        console.log(teamMembers)
+        goToMenu()
+      }
+    )};
+
+    function internPrompt(){
+      //starts function to get intern info
+      inquirer.prompt(internQuestions).then((internData) => {
+        let intern = new Intern (
+          internData.internName,
+          internData.internID,
+          internData.internEmail,
+          internData.internSchool,
+        );
+        teamMembers.push(intern);
+        //pushes intern to array
+        console.log(teamMembers)
+        goToMenu()
+      }
+    )};
 
  addManager();
 }
