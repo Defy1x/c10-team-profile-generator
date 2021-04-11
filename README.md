@@ -52,6 +52,7 @@ Coming shortly.
 
 #Usage
 ## Final screenshot
+![This is the final deployed screenshot of the node project](requirements/final.png)
 ![This is the final deployed screenshot of the node project](requirements/passed-tests.png)
 
 #Credits
