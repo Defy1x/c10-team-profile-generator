@@ -5,75 +5,89 @@
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="style.css" />
-            <title>Build a team</title>
+            <link rel="stylesheet" href="./starwars-glyphicons/css/starwars-glyphicons.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <style>
+              body{
+                background-color: #161b22;
+              }
+              .jumbotron {
+                background-color: #161b22;
+              }
+              h1   {
+                padding-bottom: 20px;
+                color: white;
+              }
+              p    {color: #616161;}
+              main {
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+              }
+              .card{
+                margin: 10px;
+              }
+            </style>
+            <title>Build Your Fleet</title>
         </head>
         <body>
+          <div class="jumbotron">
             <header>
-                <h1>Your Team</h1>
+                <h1 class="text-center"><i class="swg swg-deathstar"></i> Your Imperial Fleet <i class="swg swg-atat"></i></h1>
             </header>
             <main>
-        <section class="card">
-            <div class="name">
-                <h2>Irma</h2>
-                <span><h3>Manager<h3></span>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h3 class="card-title">Irma</h3>
+                <h3 class="card-subtitle mb-2 text-muted"><h3>Manager <i class="swg swg-darthvader"></i><h3></h3>
+                <p class="card-text">
+                    ID: 1
+                </p>
+                <p class="card-text">
+                    Email:<a href="mailto:irma@irma.com" class="card-link"> irma@irma.com</a>
+                </p>
+                <p class="card-text">
+                    <span>Office #: 66</span>
+
+                </p>
             </div>
-            <div class="employee-info">
-                <div class="id">
-                    <span>ID: </span>
-                    <span>1</span>
-                </div>
-                <div class="email">
-                    <span>Email: </span>
-                    <span><a href="mailto:irma@irma.com">irma@irma.com</a></span>
-                </div>
-                <div class="extra">
-                    <span>Manager Office #:1</span>
-      
-                </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h3 class="card-title">Cas</h3>
+                <h3 class="card-subtitle mb-2 text-muted"><h3>Engineer <i class="swg swg-bobbafett"></i> <h3></h3>
+                <p class="card-text">
+                    ID: 2
+                </p>
+                <p class="card-text">
+                    Email:<a href="mailto:cas@cas.com" class="card-link"> cas@cas.com</a>
+                </p>
+                <p class="card-text">
+                    <span>Github:<a href="https://github.com/defy1x" target="_blank" class="card-link"> github.com/defy1x</a></span>
+
+                </p>
             </div>
-        </section>
-        
-        <section class="card">
-            <div class="name">
-                <h2>Cas</h2>
-                <span><h3>Engineer<h3></span>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h3 class="card-title">Dan</h3>
+                <h3 class="card-subtitle mb-2 text-muted"><h3>Intern <i class="swg swg-stormtrooper"></i><h3></h3>
+                <p class="card-text">
+                    ID: 3
+                </p>
+                <p class="card-text">
+                    Email:<a href="mailto:dan@dan.com" class="card-link"> dan@dan.com</a>
+                </p>
+                <p class="card-text">
+                    <span>School: LGA</span>
+                </p>
             </div>
-            <div class="employee-info">
-                <div class="id">
-                    <span>ID: </span>
-                    <span>2</span>
-                </div>
-                <div class="email">
-                    <span>Email: </span>
-                    <span><a href="mailto:Cas@casmcdonald.com">Cas@casmcdonald.com</a></span>
-                </div>
-                <div class="extra">
-                    <span>Engineer Github:<a href="https://github.com/defy1x">github.com/defy1x</a></span>
-      
-                </div>
-            </div>
-        </section>
-        
-        <section class="card">
-            <div class="name">
-                <h2>Dan</h2>
-                <span><h3>Intern<h3></span>
-            </div>
-            <div class="employee-info">
-                <div class="id">
-                    <span>ID: </span>
-                    <span>3</span>
-                </div>
-                <div class="email">
-                    <span>Email: </span>
-                    <span><a href="mailto:dan@dan.com">dan@dan.com</a></span>
-                </div>
-                <div class="extra">
-                    <span>School attended: LGA</span>
-                </div>
-            </div>
-        </section>
-        </main>
+        </div>
+
+    </div>
+    </main>
     </body>
     </html>

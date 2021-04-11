@@ -11,40 +11,62 @@ function renderHTML(teamMembers) {
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="style.css" />
-            <title>Build a team</title>
+            <link rel="stylesheet" href="./starwars-glyphicons/css/starwars-glyphicons.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <style>
+              body{
+                background-color: black;
+              }
+              .jumbotron {
+                background-color: black;
+              }
+              h1   {
+                padding-bottom: 20px;
+                color: white;
+              }
+              p    {color: #616161;}
+              main {
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+              }
+              .card{
+                margin: 10px;
+              }
+            </style>
+            <title>Build Your Fleet</title>
         </head>
         <body>
+          <div class="jumbotron">
             <header>
-                <h1>Your Team</h1>
+                <h1 class="text-center"><i class="swg swg-deathstar"></i> Your Imperial Fleet <i class="swg swg-atat"></i></h1>
             </header>
             <main>`;
 
   teamMembers.forEach((employee) => {
     HTML += `
-        <section class="card">
-            <div class="name">
-                <h2>${employee.name}</h2>
-                <span>${getRole(employee)}</span>
-            </div>
-            <div class="employee-info">
-                <div class="id">
-                    <span>ID: </span>
-                    <span>${employee.id}</span>
-                </div>
-                <div class="email">
-                    <span>Email: </span>
-                    <span><a href="mailto:${employee.email}">${employee.email}</a></span>
-                </div>
-                <div class="extra">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h3 class="card-title">${employee.name}</h3>
+                <h3 class="card-subtitle mb-2 text-muted">${getRole(employee)}</h3>
+                <p class="card-text">
+                    ID: ${employee.id}
+                </p>
+                <p class="card-text">
+                    Email:<a href="mailto:${employee.email}" class="card-link"> ${employee.email}</a>
+                </p>
+                <p class="card-text">
                     ${getOther(employee)}
-                </div>
+                </p>
             </div>
-        </section>
+        </div>
         `;
   });
 
-  HTML += `</main>
+  HTML += `
+    </div>
+    </main>
     </body>
     </html>`;
 
@@ -54,24 +76,24 @@ function renderHTML(teamMembers) {
 function getRole(employee) {
   switch (employee.role) {
     case "Manager":
-      return `<h3>${employee.role}<h3>`;
+      return `<h3>${employee.role} <i class="swg swg-darthvader"></i><h3>`;
     case "Engineer":
-      return `<h3>${employee.role}<h3>`;
+      return `<h3>${employee.role} <i class="swg swg-bobbafett"></i> <h3>`;
     case "Intern":
-      return `<h3>${employee.role}<h3>`;
+      return `<h3>${employee.role} <i class="swg swg-stormtrooper"></i><h3>`;
   }
 }
 
 function getOther(employee) {
   switch (employee.role) {
     case "Manager":
-      return `<span>Office # Located:${employee.officeNumber}</span>
+      return `<span>Office #: ${employee.officeNumber}</span>
       `;
     case "Engineer":
-      return `<span>Engineer Github:<a href="https://github.com/${employee.github}">github.com/${employee.github}</a></span>
+      return `<span>Github:<a href="https://github.com/${employee.github}" target="_blank" class="card-link"> github.com/${employee.github}</a></span>
       `;
     case "Intern":
-      return `<span>School attended: ${employee.school}</span>`;
+      return `<span>School: ${employee.school}</span>`;
   }
 }
 
