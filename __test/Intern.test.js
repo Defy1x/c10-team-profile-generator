@@ -58,15 +58,6 @@ describe('Intern', () => {
     });
   });
 
-
-  describe('getRole', () => {
-    it("returns 'intern' when the getRole() method is called", () => {
-      const intern = new Intern();
-
-      expect(intern.getRole()).toBe('Intern');
-    });
-  });
-
   describe('getSchool', () => {
     it("returns 'school' when the getSchool() method is called", () => {
       const school = 'columbia';

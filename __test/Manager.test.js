@@ -58,15 +58,6 @@ describe('Manager', () => {
     });
   });
 
-
-  describe('getRole', () => {
-    it("returns 'Manager' when the getRole() method is called", () => {
-      const manager = new Manager();
-
-      expect(manager.getRole()).toBe('Manager');
-    });
-  });
-
   describe('getOfficeNumber', () => {
     it("returns 'officeNumber' when the getOfficeNumber() method is called", () => {
       const officeNumber = '123';

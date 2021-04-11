@@ -12,7 +12,7 @@ function renderHTML(teamMembers) {
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="style.css" />
-            <title>Build a team/title>
+            <title>Build a team</title>
         </head>
         <body>
             <header>
@@ -65,13 +65,13 @@ function getRole(employee) {
 function getOther(employee) {
   switch (employee.role) {
     case "Manager":
-      return `<span><a href="tel:+${employee.phone}">${employee.phone}</a></span>
+      return `<span>Office # Located:${employee.officeNumber}</span>
       `;
     case "Engineer":
-      return `<span><a href="https://github.com/${employee.github}">github.com/${employee.github}</a></span>
+      return `<span>Engineer Github:<a href="https://github.com/${employee.github}">github.com/${employee.github}</a></span>
       `;
     case "Intern":
-      return `<span>${employee.school}</span>`;
+      return `<span>School attended: ${employee.school}</span>`;
   }
 }
 

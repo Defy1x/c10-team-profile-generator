@@ -58,15 +58,6 @@ describe('Engineer', () => {
     });
   });
 
-
-  describe('getRole', () => {
-    it("returns 'Engineer' when the getRole() method is called", () => {
-      const engineer = new Engineer();
-
-      expect(engineer.getRole()).toBe('Engineer');
-    });
-  });
-
   describe('getGithub', () => {
     it("returns 'github' when the getGithub() method is called", () => {
       const github = 'https://www.github.com/';
