@@ -48,7 +48,7 @@ This homework was rather complex as it was my first time doing TDD and using jes
 
 #Links
 ## Deployed Link (Youtube Video)
-Coming shortly.
+https://www.youtube.com/watch?v=IvfdiqajXOI
 
 #Usage
 ## Final screenshot
