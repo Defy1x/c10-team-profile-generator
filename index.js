@@ -43,7 +43,7 @@ function init(){
          //calls intern prompt when picked
        }
        else {
-         return
+         buildTemplate.renderHTML(teamMembers)
        }
     }
   )};
@@ -79,7 +79,8 @@ function init(){
         goToMenu()
       }
     )};
-
+// starts the manager function
  addManager();
 }
+//initialize
 init();
